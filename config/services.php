@@ -35,4 +35,22 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Firebase Cloud Messaging (CalmAcad Push Notification)
+    |--------------------------------------------------------------------------
+    |
+    | Digunakan oleh App\Services\FCMClient untuk mengirim push notification
+    | ke browser/HP user (reminder cek ulang stres, alert kritis, broadcast
+    | admin). server_key didapat dari Firebase Console > Project Settings >
+    | Cloud Messaging.
+    |
+    */
+
+    'fcm' => [
+        'server_key' => env('FCM_SERVER_KEY'),
+        'sender_id'  => env('FCM_SENDER_ID'),
+        'project_id' => env('FIREBASE_PROJECT_ID'),
+    ],
+
 ];
