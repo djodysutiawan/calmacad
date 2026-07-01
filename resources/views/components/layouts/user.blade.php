@@ -80,7 +80,7 @@
                 <div class="flex items-center gap-3 sm:gap-5 text-sm">
 
                     {{-- Sakelar siang / malam --}}
-                    <div class="hidden xs:flex items-center gap-2">
+                    <div class="hidden sm:flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 t3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
                         <button type="button" class="theme-switch" role="switch" :aria-checked="night" @click="night = !night" aria-label="Ganti mode siang / malam">
                             <span class="knob"></span>
